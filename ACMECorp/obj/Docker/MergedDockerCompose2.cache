@@ -1,0 +1,57 @@
+name: dockercompose12115115890291292693
+services:
+  acmecorp:
+    build:
+      context: D:\ACMECorp\ACMECorp
+      dockerfile: ACMECorp/Dockerfile
+    depends_on:
+      db:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      ConnectionStrings__Default: <your_database_connection_string_here>
+    image: acmecorp
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+    - mode: ingress
+      target: 80
+      published: "8080"
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\s_balaji\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\s_balaji\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+  db:
+    environment:
+      POSTGRES_DB: <your_db_name_here>
+      POSTGRES_PASSWORD: <your_db_password_here>
+      POSTGRES_USER: <your_db_username_here>
+    image: postgres
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 5432
+      published: "5432"
+      protocol: tcp
+    restart: always
+networks:
+  default:
+    name: dockercompose12115115890291292693_default

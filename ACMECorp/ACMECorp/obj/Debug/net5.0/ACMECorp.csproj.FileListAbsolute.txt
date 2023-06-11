@@ -1,0 +1,7 @@
+D:\ACMECorp\ACMECorp\ACMECorp\obj\Debug\net5.0\ACMECorp.csproj.AssemblyReference.cache
+D:\ACMECorp\ACMECorp\ACMECorp\obj\Debug\net5.0\ACMECorp.GeneratedMSBuildEditorConfig.editorconfig
+D:\ACMECorp\ACMECorp\ACMECorp\obj\Debug\net5.0\ACMECorp.AssemblyInfoInputs.cache
+D:\ACMECorp\ACMECorp\ACMECorp\obj\Debug\net5.0\ACMECorp.AssemblyInfo.cs
+D:\ACMECorp\ACMECorp\ACMECorp\obj\Debug\net5.0\ACMECorp.csproj.CoreCompileInputs.cache
+D:\ACMECorp\ACMECorp\ACMECorp\obj\Debug\net5.0\ACMECorp.MvcApplicationPartsAssemblyInfo.cs
+D:\ACMECorp\ACMECorp\ACMECorp\obj\Debug\net5.0\ACMECorp.MvcApplicationPartsAssemblyInfo.cache

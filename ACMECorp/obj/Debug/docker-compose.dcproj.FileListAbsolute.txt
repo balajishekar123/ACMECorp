@@ -1,0 +1,2 @@
+D:\ACMECorp\ACMECorp\bin\Debug\ACMECorp.dll
+D:\ACMECorp\ACMECorp\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
